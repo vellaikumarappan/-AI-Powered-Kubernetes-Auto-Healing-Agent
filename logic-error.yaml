@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: logic-error-pod
+spec:
+  containers:
+  - name: app
+    image: python:3.9-slim
+    command: ["python", "-c"]
+    args:
+      - |
+        print("Starting application...")
+        x = 10
+        y = 0
+        print("Dividing numbers...")
+        result = x / y
+        print("Result:", result)

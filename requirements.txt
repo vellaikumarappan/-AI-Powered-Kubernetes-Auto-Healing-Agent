@@ -1,0 +1,5 @@
+streamlit
+kubernetes
+langchain
+langchain-cohere
+python-dotenv
